@@ -34,6 +34,9 @@ TARGET_RECOVERY_INITRC := device/samsung/d710/recovery.rc
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
 TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
 
+# Custom Releasetool
+TARGET_CUSTOM_RELEASETOOL := device/samsung/galaxys2-common/releasetools/squisher
+
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 

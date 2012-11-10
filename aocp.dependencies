@@ -1,6 +1,6 @@
 [
     {
-        "repository": "android_device_samsung_galaxys2-common",
+        "repository": "aocp_device_samsung_galaxys2-common",
         "target_path": "device/samsung/galaxys2-common"
     },
     {
@@ -10,5 +10,9 @@
     {
         "repository": "android_packages_apps_SamsungServiceMode",
         "target_path": "packages/apps/SamsungServiceMode"
+    },
+    {
+        "repository": "android_kernel_samsung_smdk4210_new",
+        "target_path": "kernel/samsung/smdk4210"
     }
 ]

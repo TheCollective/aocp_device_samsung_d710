@@ -15,24 +15,28 @@
 #
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/aocp/configs/cdma.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := SPH-D710
 
-# Bootanimation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
+#OTA
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/common/app/hdpi/AoCPOTA.apk:system/app/AoCPOTA.apk
+
+#bootanimation
+PRODUCT_COPY_FILES += \
+        vendor/aocp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/aocp/configs/common_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/d710/full_d710.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d710
-PRODUCT_NAME := cm_d710
+PRODUCT_NAME := aocp_d710
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SPH-D710 
 
