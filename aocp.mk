@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aocp/configs/cdma.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := SPH-D710
 
